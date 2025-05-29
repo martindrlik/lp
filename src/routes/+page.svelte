@@ -1,6 +1,6 @@
 <script>
-	import { page } from '$app/stores';
-	const isApproved = $page.url.searchParams.has('approved');
+	import { page } from '$app/state';
+	const isApproved = page.url.searchParams.has('approved');
 </script>
 
 <div class="flex h-screen items-center justify-center">
